@@ -208,6 +208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoveCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 2380727324017571932, guid: 722b9321223dba64194b524bd8465820,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7453741263291252455, guid: 722b9321223dba64194b524bd8465820,
         type: 3}
       propertyPath: m_RootOrder
@@ -261,6 +266,11 @@ PrefabInstance:
     - target: {fileID: 7453741263291252455, guid: 722b9321223dba64194b524bd8465820,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585609091106009045, guid: 722b9321223dba64194b524bd8465820,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
