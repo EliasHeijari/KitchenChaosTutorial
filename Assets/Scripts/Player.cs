@@ -7,13 +7,15 @@ public class Player : MonoBehaviour, IKitchenObjectParent
 {
     public static Player Instance { get; private set; }
 
-    [SerializeField] private float moveSpeed = 7f;
+    [Header("References")]
+    [SerializeField] private Transform topPoint;
     [SerializeField] private GameInput gameInput;
     [SerializeField] private LayerMask countersLayerMask;
+    [Space(10f)]
+    [SerializeField] private float moveSpeed = 7f;
+
     private Vector3 lastInteractDir;
     private bool isWalking;
-
-    [SerializeField] private Transform topPoint;
     private KitchenObject kitchenObject;
 
     public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;

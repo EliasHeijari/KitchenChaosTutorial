@@ -25,7 +25,15 @@ public class ClearCounter : BaseCounter
             }
             else
             { // Player Is Holding Kitchen Object
-
+                if (player.GetKitchenObject() is PlateKitchenObject)
+                {
+                    // Player is holding a plate
+                    PlateKitchenObject plateKitchenObject = player.GetKitchenObject() as PlateKitchenObject;
+                    if (plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKitchenObjectSO()))
+                    {
+                        GetKitchenObject().DestroySelf();
+                    }
+                }
             }
         }
     }
