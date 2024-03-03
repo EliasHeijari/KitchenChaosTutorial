@@ -31,14 +31,15 @@ public class ClearCounter : BaseCounter
                     PlateKitchenObject plateKitchenObject = player.GetKitchenObject() as PlateKitchenObject;
                     if (plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKitchenObjectSO()))
                     {
-                        Debug.Log("Added");
                         GetKitchenObject().DestroySelf();
                     }
                 }
                 else {
-                    if (GetKitchenObject() is PlateKitchenObject)
+                    // player is holding a KitchenObject, not a plate
+                    if (GetKitchenObject().TryGetPlate(out PlateKitchenObject plateKitchenObject))
                     {
-                        PlateKitchenObject plateKitchenObject = GetKitchenObject() as PlateKitchenObject;
+                        // Counter has a plate and player has a KitchenObject
+                        // TODO: put KitchenObject top of a plate
                         if (plateKitchenObject.TryAddIngredient(player.GetKitchenObject().GetKitchenObjectSO()))
                         {
                             player.GetKitchenObject().DestroySelf();
