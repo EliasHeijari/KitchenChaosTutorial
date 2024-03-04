@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82d9ef0970aeefd48aee1e8786890365, type: 3}
-  m_Name: QuarterPounder
+  m_Name: Sandwich
   m_EditorClassIdentifier: 
   kitchenObjectSOs:
-  - {fileID: 11400000, guid: 913160c84216f2545bd077c72727ca67, type: 2}
   - {fileID: 11400000, guid: 8bfdeed61f0992f43b93addf20d361f7, type: 2}
   - {fileID: 11400000, guid: 2e79f2878cf1d61478646e251f8eb834, type: 2}
-  - {fileID: 11400000, guid: 2b6df0cc5f51d744289dfaaf4911c82f, type: 2}
-  recipeName: QuarterPunder
+  recipeName: Sandwich
